@@ -17,5 +17,5 @@ output "greetings" {
 }
 
 output "info" {
-  value= "You are enrolled in  ${var.courses["cname"]} and Fee is =  ${var.uname["fees"] } "
+  value= "You are enrolled in  ${var.courses["cname"]} and Fee is =  ${var.courses["fees"] } "
 }
