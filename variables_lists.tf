@@ -1,5 +1,5 @@
-variable "uname" {
-  default =  []"Babar" , "Nawaz"]
+variable "urname" {
+  default =  ["Babar" , "Nawaz"]
 }
 
 variable  "courses"{
@@ -13,7 +13,7 @@ variable  "courses"{
 }
 
 output "greetings" {
-  value= "Welcome Mr. ${var.uname[1]}  ${var.uname[0] } "
+  value= "Welcome Mr. ${var.urname[1]}  ${var.urname[0] } "
 }
 
 output "info" {
