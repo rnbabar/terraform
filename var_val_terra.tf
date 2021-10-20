@@ -3,5 +3,5 @@ variable "sname" {
 }
 
 output "students"{
-    value= ${sname}
+    value= var.sname
 }

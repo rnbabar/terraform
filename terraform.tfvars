@@ -1,1 +1,1 @@
-uname = "Rab Nawaz Babar"
+sname = "Rab Nawaz Babar"
