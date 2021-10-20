@@ -1,7 +1,7 @@
-variable "envirn1" {
+variable "envirn2" {
   
 }
-output "environments"{
-    value = var.envirn1
+output "environment1"{
+    value = var.envirn2
     
 }
