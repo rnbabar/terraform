@@ -1,8 +1,8 @@
 
-variable "envirn" {
+variable "envirn1" {
   
 }
 output "environments"{
-    value= var.envirn
+    value = var.envirn1
     
 }
