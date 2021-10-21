@@ -5,5 +5,5 @@ resource "aws_instance" "cart" {
 }
 
 output "public_ip" {
-    value= aws_instance.cart.public_ip
+    value = aws_instance.cart.public_ip
 }
