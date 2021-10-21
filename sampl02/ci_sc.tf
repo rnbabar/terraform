@@ -38,6 +38,9 @@ resource "aws_security_group" "allow_tls" {
       protocol         = "-1"
       cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = ["::/0"]
+      self             = true
+      prefix_list_ids  = []
+      security_groups  = []
     }
   ]
 
