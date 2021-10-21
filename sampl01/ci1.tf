@@ -3,7 +3,7 @@ provider "aws" {
   
 }
 resource "aws_instance" "carts" {
-    ami = "ami-074df373d6bafa625"
+    ami = "ami-052ed334670027b3"
     instance_type = "t2.micro"
     
 }
