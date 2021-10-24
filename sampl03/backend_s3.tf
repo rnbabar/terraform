@@ -11,7 +11,7 @@ resource "aws_instance" "carts" {
 
 terraform {
   backend "s3" {
-    bucket = "rnbabar-storage"
+    bucket = "rnbabar-store"
     key    = "sampl03/terraform.tfstate"
     region = "us-east-1"
   }
