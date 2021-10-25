@@ -7,7 +7,7 @@ resource "aws_instance" "carts" {
     ami = "ami-0e4e4b2f188e91845"
     instance_type = "t2.micro"
     tags = {
-        Name = "Catalogue"
+        Name = var.iname[count.index]
     }
     
 }
@@ -15,4 +15,8 @@ resource "aws_instance" "carts" {
 
 output "public_ip" {
     value = aws_instance.carts.*.public_ip
+}
+
+variable "iname" {
+  default = ["frontend", "cart"]
 }
