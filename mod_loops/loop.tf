@@ -12,3 +12,6 @@ resource "aws_instance" "carts" {
     
 }
 
+module "s3" {
+  source = "./module1"
+}
