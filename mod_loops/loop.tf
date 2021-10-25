@@ -12,6 +12,3 @@ resource "aws_instance" "carts" {
     
 }
 
-output "public_ip" {
-    value = aws_instance.carts.public_ip
-}
