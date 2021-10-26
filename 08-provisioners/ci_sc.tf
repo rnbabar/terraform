@@ -14,6 +14,7 @@ resource "aws_instance" "carts" {
         host= self.public_ip
 
       }
+      
       inline = [
         "uptime"
       ]
