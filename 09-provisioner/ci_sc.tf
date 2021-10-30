@@ -11,11 +11,12 @@ resource "aws_instance" "carts" {
 }
 
 resource "null_resource" "remote" {
+  count=1
   provisioner  "remote-exec" {
       connection {
         user = "centos"
         password= "Devops321"
-        host= aws_instance.carts.*.public_ip
+        host= element(aws_instance.carts.*.public_ip,count.index)
 
       }
       
