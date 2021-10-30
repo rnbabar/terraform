@@ -15,7 +15,7 @@ resource "null_resource" "remote" {
   provisioner  "remote-exec" {
       connection {
         user = "centos"
-        password= "Devops321"
+        password= "DevOps321"
         host= element(aws_instance.carts.*.public_ip,count.index)
 
       }
