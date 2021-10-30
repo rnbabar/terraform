@@ -10,13 +10,13 @@ resource "aws_instance" "carts" {
     provisioner  "remote-exec" {
       connection {
         user = "centos"
-        password= "Devops321"
+        password= "DevOps321"
         host= self.public_ip
 
       }
       
       inline = [
-        "ls"
+        "uptime"
       ]
     
     }
