@@ -16,7 +16,7 @@ resource "aws_instance" "carts" {
       }
       
       inline = [
-        "uptime"
+        "ls"
       ]
     
     }
